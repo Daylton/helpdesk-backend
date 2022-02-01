@@ -13,9 +13,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Tecnico extends Pessoa {
-
 	private static final long serialVersionUID = 1L;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "tecnico")
 	private List<Chamado> chamados = new ArrayList<>();
@@ -48,8 +47,5 @@ public class Tecnico extends Pessoa {
 	public void setChamados(List<Chamado> chamados) {
 		this.chamados = chamados;
 	}
-	
-	
-	
-	
+
 }

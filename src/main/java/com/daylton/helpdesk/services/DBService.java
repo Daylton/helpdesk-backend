@@ -34,6 +34,8 @@ public class DBService {
 		Tecnico tec2 = new Tecnico(null, "Pedro", "54180045060", "pedro@email.com", "234");
 
 		Cliente cli1 = new Cliente(null, "Bruno Silva", "36836614025", "bruno@email.com", "123");
+		
+//		Cliente cli2 = new Cliente(null, "Pedro Sampaio", "63421768099", "pedro@email.com", "345");
 
 		Chamado c1 = new Chamado(
 				null, Prioridade.MEDIA, Status.ANDAMENTO, "Chamado 01", "Primeiro chamado", tec1, cli1);
